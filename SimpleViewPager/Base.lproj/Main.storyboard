@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Simple View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SimpleViewController" customModule="SimpleViewPager" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K34-Ew-aNj" customClass="MenuView" customModule="SimpleViewPager" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <color key="backgroundColor" red="0.86217645202020199" green="0.86217645202020199" blue="0.86217645202020199" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="NqV-Tp-cgG"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rak-PX-rnQ">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="9Yi-LY-nh3"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="K34-Ew-aNj" secondAttribute="trailing" id="AW2-2q-r4e"/>
+                            <constraint firstItem="rak-PX-rnQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SnE-mh-Sy0"/>
+                            <constraint firstAttribute="centerX" secondItem="K34-Ew-aNj" secondAttribute="centerX" id="UJC-fj-yAk"/>
+                            <constraint firstAttribute="trailing" secondItem="rak-PX-rnQ" secondAttribute="trailing" id="Ywj-DG-sS3"/>
+                            <constraint firstItem="rak-PX-rnQ" firstAttribute="top" secondItem="K34-Ew-aNj" secondAttribute="bottom" id="bA8-rC-Vg6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rak-PX-rnQ" secondAttribute="bottom" id="dO4-oM-ENP"/>
+                            <constraint firstItem="K34-Ew-aNj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ffd-vb-Vk0"/>
+                            <constraint firstItem="K34-Ew-aNj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sI6-LY-x0a"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="contentScrollView" destination="rak-PX-rnQ" id="fIV-wR-GiQ"/>
+                        <outlet property="menuView" destination="K34-Ew-aNj" id="l5l-HJ-QqV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
