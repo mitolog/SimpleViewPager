@@ -26,3 +26,6 @@ Podfile.lock
 !.gitkeep
 .DS_Store
 
+# Carthage
+Carthage/Checkouts
+Carthage/Build
