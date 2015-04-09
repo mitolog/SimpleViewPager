@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		464C4E0E1AD5205000DFF3CB /* SomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464C4E0D1AD5205000DFF3CB /* SomeViewController.swift */; };
 		464C4E101AD5206100DFF3CB /* Some.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 464C4E0F1AD5206100DFF3CB /* Some.storyboard */; };
-		464C4E121AD5B19600DFF3CB /* ReadMe.md in Sources */ = {isa = PBXBuildFile; fileRef = 464C4E111AD5B19600DFF3CB /* ReadMe.md */; };
 		46E964E61AD4032400045A46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E964E51AD4032400045A46 /* AppDelegate.swift */; };
 		46E964E81AD4032400045A46 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E964E71AD4032400045A46 /* SimpleViewController.swift */; };
 		46E964EB1AD4032500045A46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E964E91AD4032400045A46 /* Main.storyboard */; };
@@ -229,7 +228,6 @@
 				464C4E0E1AD5205000DFF3CB /* SomeViewController.swift in Sources */,
 				46E964E81AD4032400045A46 /* SimpleViewController.swift in Sources */,
 				46E964E61AD4032400045A46 /* AppDelegate.swift in Sources */,
-				464C4E121AD5B19600DFF3CB /* ReadMe.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

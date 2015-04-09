@@ -8,7 +8,7 @@
         <!--Some View Controller-->
         <scene sceneID="f02-GV-37g">
             <objects>
-                <viewController id="Eh8-pi-ifO" customClass="SomeViewController" sceneMemberID="viewController">
+                <viewController id="Eh8-pi-ifO" customClass="SomeViewController" customModule="SimpleViewPager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0vX-fK-ygc"/>
                         <viewControllerLayoutGuide type="bottom" id="bd2-6g-O2S"/>

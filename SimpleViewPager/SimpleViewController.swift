@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct MenuElem {
+class MenuElem: NSObject {
     let NameKey = "name"
     let ClassNameKey = "cn"
     let StoryBoardKey = "sb"
@@ -106,7 +106,7 @@ class SimpleViewController: UIViewController, UIScrollViewDelegate, MenuViewDele
         for menu in menus {
             let sb: UIStoryboard = UIStoryboard(name: menu.storyBoardName(), bundle: nil)
             let vc = sb.instantiateInitialViewController() as UIViewController
-            vc.title = menu.name()
+            vc.menu = menu
             vc.view.backgroundColor = UIColor(netHex: colorPalette[cnt%colorPalette.count])
             self.contentScrollView.addSubview(vc.view)
             self.vcs.append(vc)
