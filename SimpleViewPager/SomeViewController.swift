@@ -15,7 +15,7 @@ extension UIViewController {
     
     var menu: MenuElem {
         get {
-            return objc_getAssociatedObject(self, &menuElemSelector) as MenuElem
+            return objc_getAssociatedObject(self, &menuElemSelector) as! MenuElem
         }
         set {
             objc_setAssociatedObject(self, &menuElemSelector, newValue, UInt(OBJC_ASSOCIATION_RETAIN_NONATOMIC)) ;

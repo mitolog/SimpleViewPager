@@ -74,7 +74,7 @@ class MenuView: UIView, UIScrollViewDelegate {
     
     func changeLabelAttributes(scrollView: UIScrollView, currentPage: Int) {
         
-        for label in scrollView.subviews as [UILabel] {
+        for label in scrollView.subviews as! [UILabel] {
             if !label.isKindOfClass(UILabel) { continue }
             if label.tag == currentPage {
                 label.textColor = MenuViewConsts.Label.onColor
@@ -141,7 +141,7 @@ class MenuView: UIView, UIScrollViewDelegate {
         self.scrollView.frame = scrlViewRect
         
         var cnt = 0
-        for label in self.scrollView.subviews as [UILabel] {
+        for label in self.scrollView.subviews as! [UILabel] {
             if !label.isKindOfClass(UILabel) { continue }
             
             let labelFrame = CGRectMake(

@@ -86,7 +86,7 @@ class SimpleViewController: UIViewController, UIScrollViewDelegate, MenuViewDele
         
         var cnt = 0
         let rect = self.contentScrollView.frame
-        for view in self.contentScrollView.subviews as [UIView] {
+        for view in self.contentScrollView.subviews as! [UIView] {
             view.frame = CGRectMake(CGFloat(cnt) * rect.width, 0, rect.width, rect.height)
             cnt++
         }
@@ -105,7 +105,7 @@ class SimpleViewController: UIViewController, UIScrollViewDelegate, MenuViewDele
         var cnt = 0
         for menu in menus {
             let sb: UIStoryboard = UIStoryboard(name: menu.storyBoardName(), bundle: nil)
-            let vc = sb.instantiateInitialViewController() as UIViewController
+            let vc = sb.instantiateInitialViewController() as! UIViewController
             vc.menu = menu
             vc.view.backgroundColor = UIColor(netHex: colorPalette[cnt%colorPalette.count])
             self.contentScrollView.addSubview(vc.view)
